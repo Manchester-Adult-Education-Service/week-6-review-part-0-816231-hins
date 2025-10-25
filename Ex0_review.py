@@ -27,6 +27,10 @@ print("-------------------------------------------\n"
 # Output: "Hello, Alice! You are 20 years old."
 
 # Write your code below:
+name=input("Enter your name: ").capitalize()
+age=int(input("Enter your age: "))
+print(f"Hello, {name} ! You are {age} years old.")
+
 
 
 
@@ -47,7 +51,9 @@ print("-------------------------------------------\n"
 # Counting: 3
 
 # Write your code below:
-
+user_num=int(input("Enter a number between 1 to 5 :"))
+for i in range(1,user_num+1):
+  print("Counting :",i)
 
 
 # Task 3: List and Loop
@@ -67,6 +73,9 @@ print("-------------------------------------------\n"
 # cherry
 
 # Write your code below:
+fruits=["grapes","orange","Strawberry"]
+for fruit in fruits:
+    print(fruit.capitalize())
 
 
 
@@ -86,6 +95,12 @@ print("-------------------------------------------\n"
 # Output: "Thank you!"
 
 # Write your code below:
+num=int(input("Enter a number less than 10: "))
+while num>=10:
+    print("Invalid entry!")
+    num=int(input("Enter a number less than 10: "))
+
+print("Thank You!")
 
 
 
@@ -110,6 +125,11 @@ print("-------------------------------------------\n"
 # Output ends automatically after 10.
 
 # Write your code below:
+number=int(input("Enter a number: "))
+for i in range (1,11):
+    print(f"{number} X {i} =",number*i)
+
+
 
 
 
@@ -132,6 +152,13 @@ print("-------------------------------------------\n"
 # Average score: 70.0
 
 # Write your code below:
+num1=int(input("Enter score 1: "))
+num2=int(input("Enter score 2: "))
+num3=int(input("Enter score 3: "))
+scores=[num1,num2,num3]
+avg_score=sum(scores)/len(scores)
+print("Average score :",avg_score)
+
 
 
 
